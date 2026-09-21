@@ -4,6 +4,22 @@ A responsive personal finance dashboard built with React, Firebase, and Chart.js
 
 The app allows users to securely track expenses, analyze spending patterns, filter transactions, and view account-level summaries through a clean light/dark interface.
 
+## Screenshots
+
+## Screenshots
+
+### Dashboard
+
+![Expense Tracker Dashboard](docs/dashboard.png)
+
+### Dark Mode
+
+![Expense Tracker Dark Mode](docs/dark-mode.png)
+
+### Profile
+
+![Expense Tracker Profile](docs/profile.png)
+
 ## Features
 
 - Firebase email/password authentication
