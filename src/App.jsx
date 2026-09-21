@@ -14,12 +14,12 @@ import {
 } from "firebase/firestore";
 
 import { auth, db } from "./lib/firebase";
-
 import AuthForm from "./components/AuthForm";
 import Navbar from "./components/Navbar";
 import ExpenseForm, { categories } from "./components/ExpenseForm";
 import ExpenseCharts from "./components/ExpenseCharts";
 import ExpenseTable from "./components/ExpenseTable";
+import Profile from "./pages/Profile";
 
 const money = new Intl.NumberFormat("en-US", {
   style: "currency",
@@ -311,57 +311,10 @@ export default function App() {
           <Route
             path="/profile"
             element={
-              <section className="profile-page">
-                <div className="page-header">
-                  <p className="eyebrow">Account</p>
-                  <h1>User Profile</h1>
-                  <p className="muted">
-                    View your account information.
-                  </p>
-                </div>
-
-                <div className="card profile-card">
-                  <div className="profile-avatar">
-                    {user.email?.charAt(0).toUpperCase()}
-                  </div>
-
-                  <div className="profile-details">
-                    <div>
-                      <span className="muted">Email</span>
-                      <strong>{user.email}</strong>
-                    </div>
-
-                    <div>
-                      <span className="muted">
-                        Account ID
-                      </span>
-                      <strong>{user.uid}</strong>
-                    </div>
-
-                    <div>
-                      <span className="muted">
-                        Expenses recorded
-                      </span>
-                      <strong>{expenses.length}</strong>
-                    </div>
-
-                    <div>
-                      <span className="muted">
-                        Total recorded spending
-                      </span>
-                      <strong>
-                        {money.format(
-                          expenses.reduce(
-                            (sum, expense) =>
-                              sum + Number(expense.amount),
-                            0
-                          )
-                        )}
-                      </strong>
-                    </div>
-                  </div>
-                </div>
-              </section>
+              <Profile
+                user={user}
+                expenses={expenses}
+              />
             }
           />
 
