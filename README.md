@@ -44,17 +44,6 @@ The app allows users to securely track expenses, analyze spending patterns, filt
 - **CSS**
 - **Raleway**
 
-## Screenshots
-
-Add screenshots or a short GIF here to demonstrate the dashboard, charts, profile page, and dark mode.
-
-```text
-docs/
-├── dashboard.png
-├── dark-mode.png
-└── profile.png
-```
-
 ## Project Structure
 
 ```text
