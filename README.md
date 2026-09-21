@@ -6,8 +6,6 @@ The app allows users to securely track expenses, analyze spending patterns, filt
 
 ## Screenshots
 
-## Screenshots
-
 ### Dashboard
 
 ![Expense Tracker Dashboard](docs/dashboard.png)
@@ -205,6 +203,6 @@ Potential additions include:
 - automated testing
 - deployment with Firebase Hosting or Vercel
 
-## Author
+## Note
 
 Built as a full-stack project demonstrating React application architecture, Firebase integration, authentication, real-time data handling, routing, responsive UI design, and data visualization.
