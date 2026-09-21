@@ -191,4 +191,4 @@ Potential additions include:
 
 ## Author
 
-Built as a full-stack frontend project demonstrating React application architecture, Firebase integration, authentication, real-time data handling, routing, responsive UI design, and data visualization.
+Built as a full-stack project demonstrating React application architecture, Firebase integration, authentication, real-time data handling, routing, responsive UI design, and data visualization.
